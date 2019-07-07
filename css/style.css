@@ -31,7 +31,6 @@ p {
 
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
-        position: absolute;
         top: 40%;
     }
     #index-banner .section {
@@ -56,3 +55,12 @@ p {
 footer.page-footer {
     margin: 0;
 }
+
+
+#map-canvas {
+    width: 100%; 
+    height: 400px;
+    margin: 0;
+    padding: 15px;
+  }
+  
