@@ -63,4 +63,11 @@ footer.page-footer {
     margin: 0;
     padding: 15px;
   }
-  
+
+.tap-target {
+  color: #fff;
+}
+.tap-target a {
+  color: #fff;
+  text-decoration: underline;
+}

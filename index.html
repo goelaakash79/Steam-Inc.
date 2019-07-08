@@ -75,7 +75,7 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="" class="brand-logo"><img src="css/assets/testings.png"
                     style="padding-top:4px"></a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down tabs-fixed-width">
                 <li><a class="test" href="#" style="font-family:Montserrat;">How it Works</a></li>
                 <li><a class="test" href="#" style="font-family:Montserrat;">Post A Project</a></li>
                 <li><a class="test" href="#" style="font-family:Montserrat;">Community</a></li>
@@ -92,7 +92,7 @@
     </nav>
 
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red pulse">
+	<a id="mybtn" class="btn-floating btn-large red pulse">
             <i class="large material-icons tooltipped" data-position="left" data-tooltip="Contact Us">send</i>
         </a>
         <ul>
@@ -102,6 +102,14 @@
                         class="material-icons">attach_file</i></a></li>
         </ul>
     </div>
+	<!-- Tap Target Structure -->
+	  <div class="tap-target red" data-activates="mybtn">
+	    <div class="tap-target-content">
+	      <h5 style="font-weight: 500; font-family:Montserrat;">We are here for you!</h5>
+	      <p style="font-weight: 500; font-family:Montserrat;">You can connect with us 24*7 if you have an issue or you want to share something with us!</p>
+	      <a href="#!" onclick="$('.tap-target').tapTarget('close')" style="font-weight: 500; font-family:Montserrat;">Dismiss</a>
+	    </div>
+	  </div>
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -235,5 +243,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
