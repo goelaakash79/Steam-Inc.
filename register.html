@@ -2,48 +2,59 @@
 <html>
 
 <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Register</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="css/assets/icon.png" type="image/x-icon">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link src="https://formvalidation.io/vendors/formvalidation/css/formValidation.min.css"></link>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
         
+    <style>
+
+        .btn-sm {
+            background-color: seashell;
+        }
+
         .wrapper {
             width: 100%;
             height: 100%;
             align-items: center;
             justify-content: center;
             display: flex;
-            background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFDC18, #f46b45);
+            background: linear-gradient(45deg, #EE7752, #E73C7E, #23D5AB, #FFDC18, #f46b45);
             background-size: 1000% 100%;
             animation: gradient 14s linear infinite;
             animation-direction: alternate;
         }
-        
+
         @keyframes gradient {
             0% {
                 background-position: 0%
             }
+
             100% {
                 background-position: 100%
             }
         }
-        
+
         .modal.modal-fixed-footer {
             top: 15% !important;
         }
-        
+
         .modal.login {
             width: fit-content;
             padding: 5px;
         }
-        
+
         .modal .modal-footer {
             border-radius: 0 0 2px 2px;
             background-color: #fafafa;
@@ -51,52 +62,208 @@
             height: 56px;
             text-align: right;
         }
+
+        nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+.test:hover {
+    border-bottom: 3.5px solid #26a69a;
+    background-color: transparent;
+    line-height: 60px;
+    /* background-color: #26a69a */
+}
+
+p {
+    line-height: 2rem;
+}
+
+.sidenav-trigger {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+    
+}
+
+@media (min-width: 1200px)
+{
+    body{
+        overflow-y: hidden;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 15px;
+}
+
+.tap-target {
+    color: #fff;
+}
+
+.tap-target a {
+    color: #fff;
+    text-decoration: underline;
+}
+
     </style>
 </head>
 
 <body>
-    <div id="flayer" class="wrapper">
-        <form>
-            <div class="card-panel z-depth-5">
-                <h5 class="center" style="font-family:Montserrat; font-weight: 800; margin-bottom: 1%;">Go Freelancing!
-                </h5>
-                <p class="center" style="font-family:Montserrat; margin-top:0px; margin-bottom: 28px;">Join our community now!
-                </p>
-                <div class="input-field" style="margin-bottom: 0px;">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="username" type="text" class="validate" required>
-                    <label for="username" style="font-family:Montserrat; font-size: 16px; display: flex">Username<p
-              style="font-family: Montserrat; font-size: 16px; margin-top: 0px;">*</p></label>
+        <nav class="white" role="navigation" style="line-height: 400%">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="./index.html" class="brand-logo"><img src="css/assets/testings.png" style="padding-top:4px"></a>
+                    <ul class="right hide-on-med-and-down tabs-fixed-width">
+                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">How it Works</a></li>
+                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">Post A Project</a></li>
+                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">Community</a></li>
+                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">FAQ Section</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#" style="font-family:Montserrat;">How it Works</a></li>
+                        <li><a href="#" style="font-family:Montserrat;">Post A Project</a></li>
+                        <li><a href="#" style="font-family:Montserrat;">Community</a></li>
+                        <li><a href="#" style="font-family:Montserrat;">FAQ Section</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
-
-                <div class="input-field">
-                    <i class="material-icons prefix">email</i>
-                    <input type="email" name="email" class="validate" required>
-                    <label for="email" style="font-family:Montserrat; font-size: 16px; display: flex">Email<p
-              style="font-family: Montserrat; font-size: 16px; margin-top: 0px;">*</p></label>
-                </div>
-
-                <div class="input-field">
-                    <i class="material-icons prefix">lock</i>
-                    <input type="password" name="pass1" required>
-                    <label for="password" style="font-family:Montserrat; font-size: 16px; display: flex">Password<p
-              style="font-family: Montserrat; font-size: 16px; margin-top: 0px;">*</p></label>
-                </div>
-
-
-                <div class="input-field">
-                    <i class="material-icons prefix">vpn_key</i>
-                    <input type="password" name="pass2" required>
-                    <label for="password" style="font-family:Montserrat; font-size: 16px; display: flex">Confirm Password<p
-              style="font-family: Montserrat; font-size: 16px; margin-top: 0px;">*</p></label>
-                </div>
-                <!-- <p class="right">Already have an account? <a href="#login" class="modal-trigger">login</a></p> -->
-                <!-- <br> -->
-                <a class="waves-effect waves-light btn" style="text-align: center; width: fit-content; margin-left: 24%; font-family: Montserrat; font-weight: 800;">REGISTER HERE</a>
-
-                <div class="clearfix"></div>
+            </nav>
+        
+            <div class="fixed-action-btn">
+                <a id="mybtn" class="btn-floating btn-large red pulse">
+                    <i class="large material-icons tooltipped" data-position="left" data-tooltip="Contact Us">send</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red tooltipped" data-position="left" data-tooltip="Quick Feedback"><i
+                                class="material-icons">thumbs_up_down</i></a></li>
+                    <li><a class="btn-floating green tooltipped" data-position="left" data-tooltip="Upload An Issue"><i
+                                class="material-icons">attach_file</i></a></li>
+                </ul>
             </div>
-        </form>
+    <div id="flayer" class="wrapper">
+        <!-- Material form register -->
+        <div class="card z-depth-4">
+
+            <div style="background-color: #33b5e5;">
+                <br>
+                <h5 class="center" style="font-family:Montserrat; font-weight: 1000; color: white;">Go Freelancing!
+                </h5>
+                <p class="center"
+                    style="font-family:Montserrat; margin-top:0px; font-weight: 600; margin-bottom: 28px;">Join our
+                    community now!
+                </p>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body px-lg-5 pt-0">
+
+                <!-- Form -->
+                <form class="text-center" style="color: #757575;" action="login" id="demoForm">
+
+                    <div class="form-row">
+                        <div class="col">
+                            <!-- First name -->
+                            <div class="input-field col s6" style="padding:0px;">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name" style="font-family: Montserrat;">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <div class="input-field col s6" style="padding:0px;">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name" style="font-family: Montserrat;">Last Name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="input-field col s12" style="padding:0px; margin:0px;">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" style="font-family: Montserrat;">Email</label>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-field col s12" style="padding:0px;">
+                        <input id="password" type="password" class="validate">
+                        <label for="password" style="font-family: Montserrat;">Password</label>
+                    </div>
+
+                    <!-- Phone number -->
+                    <div class="input-field col s12" style="padding:0px;">
+                        <input id="passwordConfirm" type="password" class="validate">
+                        <label for="passwordConfirm" style="font-family: Montserrat;">Confirm Password</label>
+                    </div>
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4" type="submit"
+                        style="font-family:Montserrat; font-weight: 800; border-width: 2px;">Sign in</button>
+
+                    <!-- Social register -->
+                    <p style="font-family:Montserrat; font-weight: 600;">or sign up with:</p>
+
+                    <a type="button" class="btn-floating btn-fb btn-sm" style="margin-right: 4%;">
+                            <i class="fa fa-facebook-f" style="width: auto;line-height: 40px; color:teal;"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-tw btn-sm" style="margin-right: 4%;">
+                        <i class="fa fa-twitter" style="width: auto;line-height: 40px; color:teal;"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-li btn-sm" style="margin-right: 4%;">
+                        <i class="fa fa-linkedin" style="width: auto;line-height: 40px; color:teal;"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-git btn-sm">
+                        <i class="fa fa-github" style="width: auto;line-height: 40px; color:teal;"></i>
+                    </a>
+
+                    <hr>
+
+                    <!-- Terms of service -->
+                    <p style="margin:0px; font-family:Montserrat;">By clicking
+                        <em>Sign up</em> you agree to our
+                        <a href="" target="_blank">Terms & Conditions</a>
+                </form>
+                <!-- Form -->
+
+            </div>
+
+        </div>
+
     </div>
     <!-- login form put in the form -->
     <div class="modal modal-fixed-footer login" id="login">
@@ -121,9 +288,9 @@
                             </div>
                             <p>
                                 <label>
-                  <input type="checkbox">
-                  <span>Remember me</span>
-                </label>
+                                    <input type="checkbox">
+                                    <span>Remember me</span>
+                                </label>
                             </p>
                         </div>
 
@@ -146,6 +313,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script>
         const login = document.querySelectorAll(".modal");
         M.Modal.init(login, {
@@ -155,8 +331,8 @@
 
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function(e) {
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function (e) {
             FormValidation.formValidation(
                 document.getElementById('demoForm'), {
                     fields: {
@@ -216,7 +392,7 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function(e) {
+        document.addEventListener('DOMContentLoaded', function (e) {
             FormValidation.formValidation(
                 document.getElementById('demoForm'), {
                     fields: {
@@ -227,25 +403,25 @@
                                 },
                                 checkStrength: {
                                     message: 'It must be more than 8 characters long',
-                                    callback: function(input) {
+                                    callback: function (input) {
                                         return input.value.length >= 8;
                                     },
                                 },
                                 checkUppercase: {
                                     message: 'It must contain at least one uppercase character',
-                                    callback: function(input) {
+                                    callback: function (input) {
                                         return input.value != input.value.toLowerCase();
                                     },
                                 },
                                 checkLowercase: {
                                     message: 'It must contain at least one lowercase character',
-                                    callback: function(input) {
+                                    callback: function (input) {
                                         return input.value != input.value.toUpperCase();
                                     },
                                 },
                                 checkDigit: {
                                     message: 'It must contain at least one digit',
-                                    callback: function(input) {
+                                    callback: function (input) {
                                         return input.value.search(/[0-9]/) >= 0;
                                     },
                                 },
@@ -266,7 +442,7 @@
                 }
             );
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
