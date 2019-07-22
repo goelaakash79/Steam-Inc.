@@ -2,29 +2,32 @@
 <html>
 
 <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Register</title>
     <link rel="icon" href="css/assets/icon.png" type="image/x-icon">
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <link src="https://formvalidation.io/vendors/formvalidation/css/formValidation.min.css"></link>
-        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link src="https://formvalidation.io/vendors/formvalidation/css/formValidation.min.css">
+    </link>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <style>
-
         .btn-sm {
             background-color: seashell;
         }
@@ -69,100 +72,106 @@
         }
 
         nav ul a,
-nav .brand-logo {
-    color: #444;
-}
+        nav .brand-logo {
+            color: #444;
+        }
 
-.test:hover {
-    border-bottom: 3.5px solid #26a69a;
-    background-color: transparent;
-    line-height: 60px;
-    /* background-color: #26a69a */
-}
+        .test:hover {
+            border-bottom: 3.5px solid #26a69a;
+            background-color: transparent;
+            line-height: 60px;
+            /* background-color: #26a69a */
+        }
 
-p {
-    line-height: 2rem;
-}
+        p {
+            line-height: 2rem;
+        }
 
-.sidenav-trigger {
-    color: #26a69a;
-}
+        .sidenav-trigger {
+            color: #26a69a;
+        }
 
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255, 255, 255, .9);
-}
+        .parallax-container {
+            min-height: 380px;
+            line-height: 0;
+            height: auto;
+            color: rgba(255, 255, 255, .9);
+        }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-    
-}
+        @media only screen and (max-width: 992px) {
+            .parallax-container .section {
+                top: 40%;
+            }
 
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-    
-}
+            #index-banner .section {
+                top: 10%;
+            }
 
-.icon-block {
-    padding: 0 15px;
-}
+        }
 
-.icon-block .material-icons {
-    font-size: inherit;
-}
+        @media only screen and (max-width: 600px) {
+            #index-banner .section {
+                top: 0;
+            }
 
-footer.page-footer {
-    margin: 0;
-}
+        }
 
-#map-canvas {
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    padding: 15px;
-}
+        .icon-block {
+            padding: 0 15px;
+        }
 
-.tap-target {
-    color: #fff;
-}
+        .icon-block .material-icons {
+            font-size: inherit;
+        }
 
-.tap-target a {
-    color: #fff;
-    text-decoration: underline;
-}
+        footer.page-footer {
+            margin: 0;
+        }
 
+        #map-canvas {
+            width: 100%;
+            height: 400px;
+            margin: 0;
+            padding: 15px;
+        }
+
+        .tap-target {
+            color: #fff;
+        }
+
+        .tap-target a {
+            color: #fff;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-        <nav class="white" role="navigation" style="line-height: 400%">
-                <div class="nav-wrapper container">
-                    <a id="logo-container" href="./index.html" class="brand-logo"><img src="css/assets/testings.png" style="padding-top:4px"></a>
-                    <ul class="right hide-on-med-and-down tabs-fixed-width">
-                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">How it Works</a></li>
-                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">Post A Project</a></li>
-                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">Community</a></li>
-                        <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">FAQ Section</a></li>
-                    </ul>
-                    <ul id="nav-mobile" class="sidenav">
-                        <li><a href="#" style="font-family:Montserrat;">How it Works</a></li>
-                        <li><a href="#" style="font-family:Montserrat;">Post A Project</a></li>
-                        <li><a href="#" style="font-family:Montserrat;">Community</a></li>
-                        <li><a href="#" style="font-family:Montserrat;">FAQ Section</a></li>
-                    </ul>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse" style="text-decoration: none; color: teal;"><i class="material-icons">menu</i></a>
-                </div>
-            </nav>
-        
+    <nav class="white" role="navigation" style="line-height: 400%">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="./index.html" class="brand-logo"><img src="css/assets/testings.png"
+                    style="padding-top:4px"></a>
+            <ul class="right hide-on-med-and-down tabs-fixed-width">
+                <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">How it
+                        Works</a></li>
+                <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">Post A
+                        Project</a></li>
+                <li><a class="test" href="#"
+                        style="font-family:Montserrat; text-decoration: none; color: black;">Community</a></li>
+                <li><a class="test" href="#" style="font-family:Montserrat; text-decoration: none; color: black;">FAQ
+                        Section</a></li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#" style="font-family:Montserrat;">How it Works</a></li>
+                <li><a href="#" style="font-family:Montserrat;">Post A Project</a></li>
+                <li><a href="#" style="font-family:Montserrat;">Community</a></li>
+                <li><a href="#" style="font-family:Montserrat;">FAQ Section</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse"
+                style="text-decoration: none; color: teal;"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
     <div id="flayer" class="wrapper">
         <!-- Material form register -->
         <div class="card z-depth-4">
@@ -219,17 +228,18 @@ footer.page-footer {
                     </div>
 
                     <!-- Sign up button -->
-                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4" id = "button-a"
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4" id="button-a"
                         style="font-family:Montserrat; font-weight: 800; border-width: 2px;">Sign Up</button>
                     <!-- Sign up button -->
                     <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4" type="button"
-                        style="font-family:Montserrat; font-weight: 800; border-width: 2px; background-color: #17A2B8; color: white; border-color: #17A2B8;" data-toggle="modal" data-target="#myModal">Login</button>
+                        style="font-family:Montserrat; font-weight: 800; border-width: 2px; background-color: #17A2B8; color: white; border-color: #17A2B8;"
+                        data-toggle="modal" data-target="#myModal">Login</button>
 
                     <!-- Social register -->
                     <p style="font-family:Montserrat; font-weight: 600;">or Sign Up with:</p>
 
                     <a type="button" class="btn-floating btn-fb btn-sm" style="margin-right: 4%;">
-                            <i class="fa fa-facebook-f" style="width: auto;line-height: 40px; color:teal;"></i>
+                        <i class="fa fa-facebook-f" style="width: auto;line-height: 40px; color:teal;"></i>
                     </a>
                     <a type="button" class="btn-floating btn-tw btn-sm" style="margin-right: 4%;">
                         <i class="fa fa-twitter" style="width: auto;line-height: 40px; color:teal;"></i>
@@ -245,88 +255,96 @@ footer.page-footer {
 
                     <!-- Terms of service -->
                     <div style="align-items: center;">
-                    <p style="margin:0px; font-family:Montserrat;">By clicking
-                         "Sign Up" you agree to our
-                        <a href="" target="_blank">Terms & Conditions</a>
+                        <p style="margin:0px; font-family:Montserrat;">By clicking
+                            "Sign Up" you agree to our
+                            <a href="" target="_blank">Terms & Conditions</a>
                     </div>
                 </form>
                 <!-- Form -->
 
             </div>
             <div class="modal fade" id="myModal" style="background: transparent; min-height: 100%">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content" style="padding: 1px;">
-                      
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content" style="padding: 1px;">
+
                         <!-- Modal Header -->
                         <div class="modal-header" style=" padding:0px;">
-                                <div style="background-color: #17A2B8; width:100%">
-                                        <br>
-                                        <h5 class="center" style="font-family:Montserrat; font-weight: 1000; color: white;">Welcome Home!
-                                        </h5>
-                                        <p class="center"
-                                            style="font-family:Montserrat; margin-top:0px; font-weight: 600; margin-bottom: 28px;">Yaayyyy.. Just one step away from Login!
-                                        </p>
-                                    </div>
+                            <div style="background-color: #17A2B8; width:100%">
+                                <br>
+                                <h5 class="center" style="font-family:Montserrat; font-weight: 1000; color: white;">
+                                    Welcome Home!
+                                </h5>
+                                <p class="center"
+                                    style="font-family:Montserrat; margin-top:0px; font-weight: 600; margin-bottom: 28px;">
+                                    Yaayyyy.. Just one step away from Login!
+                                </p>
+                            </div>
                         </div>
-                        
+
                         <!-- Modal body -->
                         <div class="modal-body">
-                                <div class="card-body px-lg-5 pt-0" style="padding:0px;">
+                            <div class="card-body px-lg-5 pt-0" style="padding:0px;">
 
-                                        <!-- Form -->
-                                        <form class="text-center" style="color: #757575;" id="demoForm1">
-                        
-                                            <!-- E-mail -->
-                                            <div class="input-field col s12" style="padding:0px; margin:0px;">
-                                                <input id="email1" type="email" class="validate">
-                                                <label for="email1" style="font-family: Montserrat;">Email</label>
-                                            </div>
-                        
-                                            <!-- Password -->
-                                            <div class="input-field col s12" style="padding:0px;">
-                                                <input id="password1" type="password" class="validate">
-                                                <label for="password1" style="font-family: Montserrat;">Password</label>
-                                            </div>
-                        
-                                            <!-- Login button -->
-                                            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4" type="submit"
-                                                style="font-family:Montserrat; font-weight: 800; border-width: 2px;">Login</button>
-                        
-                                            <!-- Social register -->
-                                            <p style="font-family:Montserrat; font-weight: 600;">or Login with:</p>
-                        
-                                            <a type="button" class="btn-floating btn-fb btn-sm" style="margin-right: 4%;">
-                                                    <i class="fa fa-facebook-f" style="width: auto;line-height: 40px; color:teal;"></i>
-                                            </a>
-                                            <a type="button" class="btn-floating btn-tw btn-sm" style="margin-right: 4%;">
-                                                <i class="fa fa-twitter" style="width: auto;line-height: 40px; color:teal;"></i>
-                                            </a>
-                                            <a type="button" class="btn-floating btn-li btn-sm" style="margin-right: 4%;">
-                                                <i class="fa fa-linkedin" style="width: auto;line-height: 40px; color:teal;"></i>
-                                            </a>
-                                            <a type="button" class="btn-floating btn-git btn-sm">
-                                                <i class="fa fa-github" style="width: auto;line-height: 40px; color:teal;"></i>
-                                            </a>
-                                        </form>
-                                        <!-- Form -->
-                        
+                                <!-- Form -->
+                                <form class="text-center" style="color: #757575;" id="demoForm1">
+
+                                    <!-- E-mail -->
+                                    <div class="input-field col s12" style="padding:0px; margin:0px;">
+                                        <input id="email1" type="email" class="validate">
+                                        <label for="email1" style="font-family: Montserrat;">Email</label>
                                     </div>
+
+                                    <!-- Password -->
+                                    <div class="input-field col s12" style="padding:0px;">
+                                        <input id="password1" type="password" class="validate">
+                                        <label for="password1" style="font-family: Montserrat;">Password</label>
+                                    </div>
+
+                                    <!-- Login button -->
+                                    <button
+                                        class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-4"
+                                        type="submit"
+                                        style="font-family:Montserrat; font-weight: 800; border-width: 2px;">Login</button>
+
+                                    <!-- Social register -->
+                                    <p style="font-family:Montserrat; font-weight: 600;">or Login with:</p>
+
+                                    <a type="button" class="btn-floating btn-fb btn-sm" style="margin-right: 4%;">
+                                        <i class="fa fa-facebook-f"
+                                            style="width: auto;line-height: 40px; color:teal;"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-tw btn-sm" style="margin-right: 4%;">
+                                        <i class="fa fa-twitter" style="width: auto;line-height: 40px; color:teal;"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-li btn-sm" style="margin-right: 4%;">
+                                        <i class="fa fa-linkedin"
+                                            style="width: auto;line-height: 40px; color:teal;"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-git btn-sm">
+                                        <i class="fa fa-github" style="width: auto;line-height: 40px; color:teal;"></i>
+                                    </a>
+                                </form>
+                                <!-- Form -->
+
+                            </div>
                         </div>
-                        
+
                         <!-- Modal footer -->
                         <div class="modal-footer" style="display: flex;">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:2%; background-color: #17A2B8; color: white; border:#17A2B8; border-width: 2px;">Login</button>
-                          <button type="button" class="btn btn-secondary z-depth-2" data-dismiss="modal" style="background-color:#E73C7E; border:#E73C7E; border-width: 2px;">Close</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                style="margin-right:2%; background-color: #17A2B8; color: white; border:#17A2B8; border-width: 2px;">Login</button>
+                            <button type="button" class="btn btn-secondary z-depth-2" data-dismiss="modal"
+                                style="background-color:#E73C7E; border:#E73C7E; border-width: 2px;">Close</button>
                         </div>
-                        
-                      </div>
+
                     </div>
-                  </div>
+                </div>
+            </div>
 
         </div>
 
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
@@ -335,15 +353,30 @@ footer.page-footer {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
-<script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script>
+        var button = document.querySelector("#button-a");
+        button.addEventListener("click", function(){
+            console.log("clicked")
+            parent.swal({
+            title: "Good job!",
+            text: "You",
+            icon: "success",
+            button: "OK",
+            });
+        });
+        
+    </script>
+    
     <!-- <script>
         document.addEventListener('DOMContentLoaded', function (e) {
             FormValidation.formValidation(
